@@ -1,0 +1,30 @@
+# Create record
+curl \
+--header "Content-Type: application/json" \
+--request POST \
+--data '{"name":"Cassandra","topics":["xyz", "Abc"]}' \
+http://localhost:8080/quiz
+
+# Get all records
+curl \
+  --request GET \
+  http://localhost:8080/quiz
+
+# Get a record for a given id
+curl \
+--request GET \
+http://localhost:8080/quiz/5d5c1ee0-5525-11e9-ba95-cd3c6e2e3374
+
+# Update record
+curl \
+--header "Content-Type: application/json" \
+--request PATCH \
+--data '{"name":"Cassandra - updated","topics":["xyz", "Abc", "pqr"]}' \
+http://localhost:8080/quiz/5d5c1ee0-5525-11e9-ba95-cd3c6e2e3374
+
+# Delete record
+curl \
+--request DELETE \
+http://localhost:8080/quiz/5d5c1ee0-5525-11e9-ba95-cd3c6e2e3374
+
+

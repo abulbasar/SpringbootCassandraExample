@@ -1,0 +1,10 @@
+/Users/abasar/workspaces/java/SpringBootCassandraExample/src/main/java/com/example/services/QuizService.java
+/Users/abasar/workspaces/java/SpringBootCassandraExample/src/main/java/com/example/responses/CollectionType.java
+/Users/abasar/workspaces/java/SpringBootCassandraExample/src/main/java/com/example/repositories/QuizRepository.java
+/Users/abasar/workspaces/java/SpringBootCassandraExample/src/main/java/com/example/Application.java
+/Users/abasar/workspaces/java/SpringBootCassandraExample/src/main/java/com/example/responses/QuizResponse.java
+/Users/abasar/workspaces/java/SpringBootCassandraExample/src/main/java/com/example/requests/QuizRequest.java
+/Users/abasar/workspaces/java/SpringBootCassandraExample/src/main/java/com/example/configurations/CassandraConfig.java
+/Users/abasar/workspaces/java/SpringBootCassandraExample/src/main/java/com/example/controllers/QuizController.java
+/Users/abasar/workspaces/java/SpringBootCassandraExample/src/main/java/com/example/entities/QuizEntity.java
+/Users/abasar/workspaces/java/SpringBootCassandraExample/src/main/java/com/example/configurations/AppProperties.java
