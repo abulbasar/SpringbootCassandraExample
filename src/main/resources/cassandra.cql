@@ -1,5 +1,5 @@
 create table if not exists demo.quiz(
-    quiz_id timeuuid,
+    quiz_id timeuuid primary key,
     name text,
     topics list<text>
 ) ;
