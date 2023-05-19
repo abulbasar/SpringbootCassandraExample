@@ -1,8 +1,8 @@
-create table if not exists demo.quiz(
-    quiz_id timeuuid primary key,
+create table if not exists quiz(
+    quiz_id uuid primary key,
     name text,
     topics list<text>
-) ;
+);
 
 
 
@@ -14,7 +14,7 @@ create type if not exists Option(
 
 create table if not exists user( 
     user_id     uuid primary key,
-    name        text
+    name        text,
     email       text
 );
     

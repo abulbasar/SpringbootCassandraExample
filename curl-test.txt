@@ -1,8 +1,11 @@
+# Test ping request
+curl localhost:8080/ping
+
 # Create record
 curl \
 --header "Content-Type: application/json" \
 --request POST \
---data '{"name":"Cassandra","topics":["xyz", "Abc"]}' \
+--data '{"name":"Cassandra","topics":["Architecture", "Read", "Write", "CQL"]}' \
 http://localhost:8080/quiz
 
 # Get all records
@@ -10,21 +13,24 @@ curl \
   --request GET \
   http://localhost:8080/quiz
 
+
+REC_ID=9d976870-f5fd-11ed-a01a-3d3353993485
+
 # Get a record for a given id
 curl \
 --request GET \
-http://localhost:8080/quiz/5d5c1ee0-5525-11e9-ba95-cd3c6e2e3374
+http://localhost:8080/quiz/$REC_ID
 
 # Update record
 curl \
 --header "Content-Type: application/json" \
 --request PATCH \
---data '{"name":"Cassandra - updated","topics":["xyz", "Abc", "pqr"]}' \
-http://localhost:8080/quiz/5d5c1ee0-5525-11e9-ba95-cd3c6e2e3374
+--data '{"name":"Cassandra - DSE","topics":["Architecture", "Read", "Write", "CQL", "DSE Search", "DSE Analytics"]}' \
+http://localhost:8080/quiz/$REC_ID
 
 # Delete record
 curl \
 --request DELETE \
-http://localhost:8080/quiz/5d5c1ee0-5525-11e9-ba95-cd3c6e2e3374
+http://localhost:8080/quiz/$REC_ID
 
 
